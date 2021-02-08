@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="right|center"
+        android:inputType="textPersonName"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textSize="40pt"
+        android:importantForAutofill="no" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1pt"
+        android:background="@color/black">
+
+        <TableRow
+            android:layout_width="match_parent"
+            tools:ignore="UselessParent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/butAC"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="C"
+                android:onClick="acEvent"/>
+
+            <Button
+                android:id="@+id/butPlusMinus"
+                android:layout_width="48pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="+/-"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/butDiv"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="/"
+                android:onClick="operatorEvent"/>
+
+            <Button
+                android:id="@+id/butMult"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="*"
+                android:onClick="operatorEvent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            tools:ignore="UselessParent"
+            android:layout_marginBottom="1pt">
+
+            <Button
+                android:id="@+id/but7"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="7"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/but8"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="8"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/but9"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="9"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/butPersent"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="%"
+                android:onClick="percentEvent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1pt"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/but4"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="4"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/but5"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="5"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/but6"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="6"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/butMinus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="-"
+                android:onClick="operatorEvent"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginBottom="1pt"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/but1"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="1"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/but2"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="2"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/but3"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="3"
+                android:onClick="numberEvent"/>
+
+            <Button
+                android:id="@+id/butPlus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:background="@color/cardview_dark_background"
+                android:text="+"
+                android:onClick="operatorEvent"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/black">
+        <Button
+            android:id="@+id/but0"
+            android:layout_width="50pt"
+            android:layout_height="30pt"
+            android:layout_weight="2"
+            android:layout_marginRight="2pt"
+            android:background="@color/cardview_dark_background"
+            android:text="0"
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/butDot"
+            android:layout_width="50pt"
+            android:layout_height="30pt"
+            android:layout_weight="1"
+            android:layout_marginRight="2pt"
+            android:background="@color/cardview_dark_background"
+            android:text=","
+            android:onClick="numberEvent"/>
+
+        <Button
+            android:id="@+id/butEqual"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:text="="
+            android:onClick="equalEvent"/>
+    </LinearLayout>
+
+
+</LinearLayout>
