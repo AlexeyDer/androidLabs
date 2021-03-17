@@ -12,6 +12,7 @@ interface StudentDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addStudent(student: Student)
 
-    @Query("SELECT * FROM student_table ORDER BY name ASC")
+    @Query("SELECT * FROM student_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<Student>>
+
 }
